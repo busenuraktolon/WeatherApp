@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Sorgulama</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="WeatherApp.js"></script>
+    <link rel="stylesheet" href="WeatherApp.css">
+</head>
+<div id="background-animation"></div>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <div class="asd">
+                <label for="inputCountry">Ülke:</label>
+            <input type="text" id="inputCountry" placeholder="Ülke ">
+    
+            </div>
+            <div class="asd2">
+                <label for="inputCity">Şehir:</label>
+                <input type="text" id="inputCity" placeholder="Şehir">
+            </div>
+    
+            <button class="button-text" onclick="getWeatherInfo()">Hava Durumu Sorgula</button>
+        </div>
+        <div class="weather">
+            <div class="location"><h1 id="city"></h1></div>
+            <div class="info">
+                <h2 id="celsius"></h2>
+                <h3 id="result"></h3>
+            </div>
+            <div class="date"> <h4 id="date"></h4></div>
+        </div>
+        
+        <div class="future">
+            <div  class="future-items"> 
+                <h1 id="one-text"class="celsius-text"></h1>
+                <h2 id="one-date"class="date-text"></h2>
+                <p id="one-weather"class="weather-text"></p>
+            </div>
+            <div  class="future-items">
+                <h1 id="two-text"class="celsius-text"></h1>
+                <h2 id="two-date"class="date-text"></h2>
+                <p id="two-weather"class="weather-text"></p>
+            </div>
+            <div class="future-items"> 
+                <h1 id="three-text"class="celsius-text"></h1>
+                <h2 id="three-date"class="date-text"></h2>
+                <p id="three-weather"class="weather-text"></p>
+            </div>
+            <div  class="future-items">
+                <h1 id="four-text"class="celsius-text"></h1>
+                <h2 id="four-date"class="date-text"></h2>
+                <p id="four-weather"class="weather-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="WeatherApp.js"></script>
+
+</body>
+</html>
